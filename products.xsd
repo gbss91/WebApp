@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Web Application Development CA1
+   
+   Student Names:
+   
+   Date:
+
+   Filename:          products.xsd
+   Supporting Files:  products.xml
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- declares elements names and types -->
+	<xsd:attribute name="code" type="codeType"/>
+	<xsd:element name="category" type="categoryType"/>
+	<xsd:element name="name" type="xsd:string"/>
+	<xsd:element name="description" type="xsd:string"/>
+	<xsd:element name="quantity" type="quantityType"/>
+	<xsd:element name="unitPrice" type="unitPriceType"/>
+
+<!-- sets reuiqred format for code attribute -->
+	<xsd:simpleType name="codeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9][0-9][0-9]-[0-9][0-9]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+<!-- sets the categories allowed -->
+   <xsd:simpleType name="categoryType">
+      <xsd:restriction base="xsd:string">
+         <xsd:enumeration value="Fantasy" />
+         <xsd:enumeration value="Cooking" />
+		 <xsd:enumeration value="History" />
+		 <xsd:enumeration value="Education" />
+		 <xsd:enumeration value="Art" />
+		 <xsd:enumeration value="Fiction" />
+      </xsd:restriction>
+   </xsd:simpleType>
+
+<!-- sets minimum allowed value and data type for element quantity-->
+	<xsd:simpleType name="quantityType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+<!-- sets minimum allowed value and data type for element unitPrice -->	
+	<xsd:simpleType name="unitPriceType">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:minExclusive value="0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+<!-- declares product child elements -->
+	<xsd:element name="product">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="category"/>
+				<xsd:element ref="name"/>
+				<xsd:element ref="description"/>
+				<xsd:element ref="quantity"/>
+				<xsd:element ref="unitPrice"/>
+			</xsd:sequence>
+<!-- sets code attribute as a required attribute -->
+			<xsd:attribute ref="code" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+<!-- declares root element products and sub element product -->
+	<xsd:element name="products">
+		<xsd:complexType>
+			<xsd:sequence>
+<!-- sets minimum required occurance of element product -->
+				<xsd:element ref="product" minOccurs="10" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>
