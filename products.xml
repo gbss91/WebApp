@@ -4,12 +4,16 @@
 <!--
    Web Application Development CA1
    
-   Student Names: Ruby Lennon & Gabriel Salas
+   Student Names: Student Names: Ruby Lennon (x19128355) & Gabriel Salas (x19104162)
    
    Date: 1 November 2020
 
    Filename:          products.xml
-   Supporting Files:  products.xsd / productsstyle.xsl 
+   
+   Supporting Files:
+   products.css
+   products.xsd
+   products.xsl
 -->
 <products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="products.xsd">
