@@ -18,7 +18,7 @@
     <xsl:template match="/">
         <html>
         <head>
-            <link rel="stylesheet" type="text/css" href="style.css"/>
+            <link rel="stylesheet" type="text/css" href="products.css"/>
         </head> 
         <body>
             <!-- Create a table -->
