@@ -17,10 +17,12 @@
 
     <xsl:template match="/">
         <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+        </head> 
         <body>
             <!-- Create a table -->
-            <table border="1">
-                
+            <table class="xslTable">
                 <!-- First row with headers-->
                 <tr>
                     <th>Code</th>
@@ -38,8 +40,8 @@
                     <td><xsl:value-of select="category"></xsl:value-of></td>
                     <td><xsl:value-of select="name"></xsl:value-of></td>
                     <td><xsl:value-of select="description"></xsl:value-of></td>
-                    <td><xsl:value-of select="quantity"></xsl:value-of></td>
-                    <td><xsl:value-of select="unitPrice"></xsl:value-of></td>ß
+                    <td class="center"><xsl:value-of select="quantity"></xsl:value-of></td>
+                    <td class="center"><xsl:value-of select="unitPrice"></xsl:value-of></td>
                 </tr>
                 </xsl:for-each>
                 
