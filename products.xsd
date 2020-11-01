@@ -2,12 +2,12 @@
 <!--
    Web Application Development CA1
    
-   Student Names: Ruby Lennon / Emma Mc Phillips / Gabriel Salas 
+   Student Names: Ruby Lennon & Gabriel Salas 
    
-   Date:
+   Date: 1 November 2020 
 
    Filename:          products.xsd
-   Supporting Files:  products.xml
+   Supporting Files:  products.xml / productsstyle.xsl 
 -->
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <!-- declares elements names and types -->

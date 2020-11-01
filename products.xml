@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="productsstyle.xsl" type="text/xsl"?>
+
 <!--
    Web Application Development CA1
    
-   Student Names: Ruby Lennon / Emma Mc Phillips / Gabriel Salas
+   Student Names: Ruby Lennon & Gabriel Salas
    
-   Date:
+   Date: 1 November 2020
 
-   Filename:          products.xsd
-   Supporting Files:  products.xml
+   Filename:          products.xml
+   Supporting Files:  products.xsd / productsstyle.xsl 
 -->
 <products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="products.xsd">
