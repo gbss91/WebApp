@@ -8,7 +8,10 @@
    Date: 1 November 2020
 
    Filename:          productsstyle.xsl 
-   Supporting Files:  products.xml / products.xsd
+   Supporting Files:  
+   products.xml
+   products.xsd
+   products.css
 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
