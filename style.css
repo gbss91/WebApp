@@ -33,6 +33,10 @@ body {
     font-size: 14px;
 }
 
+.navbar {
+    padding: 0px;
+}
+
 .navbar-brand {
     font-size: x-large;
 }
