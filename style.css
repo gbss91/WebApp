@@ -41,9 +41,29 @@ body {
     font-size: x-large;
 }
 
-.main-menu-item {
-    justify-content: center;
+.main-menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center !important;
+    align-items: center;
     
+}
+
+.topnav {
+    background-color: #EFFCFF;
+    overflow: hidden;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
 }
 
 ul li {
