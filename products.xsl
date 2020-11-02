@@ -21,6 +21,7 @@
         <html>
         <head>
 			<!-- Link to stylesheet -->
+            <link rel="stylesheet" type="text/css" href="products.css"/>
             <link rel="stylesheet" type="text/css" href="style.css"/>
         </head> 
         <body>
