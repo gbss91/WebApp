@@ -2,3 +2,54 @@
 //Web Page Stylesheet
 */
 
+/* Color pallete */
+
+.background-primary-color { 
+    background: #EFFCFF; 
+}
+
+.accent-color1 { 
+    background: #FFC107; 
+}
+
+.accent-color2 {
+    background: #ff3368;
+}
+
+.primary-text-color { 
+    color: #212121; 
+}
+
+.secondary-text-color { 
+    color: #757575; 
+}
+
+/* End of color pallete */
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.navbar-brand {
+    font-size: x-large;
+}
+
+.main-menu-item {
+    justify-content: center;
+    
+}
+
+ul li {
+    font-size: 15px;
+    padding: 30px 15px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #212121;
+}
+
