@@ -1,5 +1,19 @@
 /*
-//Web Page Stylesheet
+Web Application Development CA1
+   
+Student Names: Student Names: Ruby Lennon (x19128355) & Gabriel Salas (x19104162)
+   
+Date: 3 November 2020
+
+Filename: style.css
+   
+Supporting Files:
+index.html
+about.html
+mission.html
+contact.html
+search.html
+
 */
 
 /* Color pallete */
@@ -37,33 +51,45 @@ body {
     padding: 0px;
 }
 
-.navbar-brand {
-    font-size: x-large;
-}
-
-.main-menu {
-    display: flex;
-    flex-grow: 1;
+.main-menu-item {
     justify-content: center !important;
-    align-items: center;
-    
 }
 
-.topnav {
-    background-color: #EFFCFF;
-    overflow: hidden;
-}
+@media (max-width: 991px) {
 
-.topnav .icon {
-    display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+    .header {
+        padding: 15px 0px;
     }
+
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+        position: absolute;
+        padding: 0px;
+    }
+
+    .main-menu-item .nav-item {
+        padding: 10px 15px ;
+    }
+
+    .navbar-collapse {
+        z-index: 9999 !important;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        background-color: #ff3368;
+    }
+
+    .navbar-brand h2 {
+        max-width: 100px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        top: 0;
+    }
+
 }
 
 ul li {
@@ -75,5 +101,9 @@ ul li {
 
 .navbar-light .navbar-nav .nav-link {
     color: #212121;
+}
+
+ion-icon {
+    font-size: 25px; 
 }
 
