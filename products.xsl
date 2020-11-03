@@ -20,6 +20,10 @@
 	<xsl:template match="/">
         <html>
         <head>
+             
+            <!-- Google fonts -->
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400"/>
+
 			<!-- Link to stylesheet -->
             <link rel="stylesheet" type="text/css" href="products.css"/>
             <link rel="stylesheet" type="text/css" href="style.css"/>
