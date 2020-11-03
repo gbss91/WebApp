@@ -18,25 +18,11 @@ search.html
 
 /* Color pallete */
 
-.background-primary-color { 
-    background: #EFFCFF; 
-}
-
-.accent-color1 { 
-    background: #FFC107; 
-}
-
-.accent-color2 {
-    background: #ff3368;
-}
-
-.primary-text-color { 
-    color: #212121; 
-}
-
-.secondary-text-color { 
-    color: #757575; 
-}
+.background-primary-color {background: #EFFCFF;}
+.accent-color1 {background: #FFC107;}
+.accent-color2 {background: #ff3368;}
+.primary-text-color {color: #212121;}
+.secondary-text-color {color: #757575}
 
 /* End of color pallete */
 
@@ -71,11 +57,15 @@ body {
         padding: 10px 15px ;
     }
 
+    .nav-item:hover {
+        background: #FFC107;
+    }
+
     .navbar-collapse {
         z-index: 9999 !important;
         position: absolute;
         left: 0;
-        top: 50px;
+        top: 45px;
         width: 100%;
         background-color: #ff3368;
     }
@@ -104,6 +94,7 @@ ul li {
 }
 
 ion-icon {
-    font-size: 25px; 
+    font-size: 24px; 
+    color: #212121;
 }
 
