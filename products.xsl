@@ -29,6 +29,7 @@
             <table class="xslTable">
                 <!-- First row with headers-->
                 <tr>
+                    <th></th>
 					<th>Code</th>
 					<th>Category</th>
                     <th>Name</th>
@@ -40,6 +41,7 @@
                 <!-- For each loop to select every product element-->
                 <xsl:for-each select="products/product">
                 <tr>
+                    <td><img src="img/{@code}.jpg" class="product-img"/></td> <!-- Selects image matchig @code-->
                     <td><xsl:value-of select="@code"></xsl:value-of></td>
                     <td><xsl:value-of select="category"></xsl:value-of></td>
                     <td><xsl:value-of select="name"></xsl:value-of></td>
@@ -47,8 +49,9 @@
                     <td class="center"><xsl:value-of select="quantity"></xsl:value-of></td>
                     <td class="center"><xsl:value-of select="unitPrice"></xsl:value-of></td>
                  </tr>
+                 
                  </xsl:for-each>
-            </table>
+            </table>    
         </body>
         </html>
 	</xsl:template>  

@@ -1,11 +1,23 @@
+/*
+Web Application Development CA1
+   
+Student Names: Student Names: Ruby Lennon (x19128355) & Gabriel Salas (x19104162)
+   
+Date: 4 November 2020
+
+Filename: script.js
+   
+Supporting Files:
+index.html
+about.html
+mission.html
+contact.html
+search.html
+products.xsl
+
+*/
 
 
-//Adds responsive class to css to show responsive menu
-function navButton() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+
+
+

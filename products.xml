@@ -17,7 +17,7 @@
 -->
 <products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="products.xsd">
-	<product code="101-10">
+	<product code="101-01">
 		<category>Fantasy</category>
 		<name>The Fellowship of the Ring</name>
 		<description>Volume One</description>

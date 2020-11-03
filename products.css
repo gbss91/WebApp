@@ -35,3 +35,7 @@ td {
 .center{
    text-align: center;
 }
+
+.product-img {
+   max-height: 100px;
+}
