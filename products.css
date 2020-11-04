@@ -17,6 +17,8 @@
 table{
    width: auto;
    border-collapse: collapse;
+   margin: 0 auto;
+   
 
 }
 
@@ -38,4 +40,12 @@ td {
 
 .product-img {
    max-height: 100px;
+}
+
+#name {
+	font-weight:bold;
+}
+
+#description {
+	font-style:italic;
 }

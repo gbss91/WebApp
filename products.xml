@@ -18,72 +18,72 @@
 <products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="products.xsd">
 	<product code="101-01">
-		<category>Fantasy</category>
-		<name>The Fellowship of the Ring</name>
-		<description>Volume One</description>
+		<category>Tops</category>
+		<name>Logo T-Shirt</name>
+		<description>Simple cotton T-Shirt with Logo Design</description>
 		<quantity>1</quantity>
 		<unitPrice>10.50</unitPrice>
 	</product>
 	<product code="101-02">
-		<category>Cooking</category>
-		<name>101 Cooking Recipes</name>
-		<description>Learn how to cook</description>
+		<category>Jeans</category>
+		<name>Regular Jeans</name>
+		<description>Straight leg blue washed, stretched denim jeans</description>
 		<quantity>2</quantity>
 		<unitPrice>5.50</unitPrice>
 	</product>
 	<product code="101-03">
-		<category>Cooking</category>
-		<name>101 Dessert Recipes</name>
-		<description>Learn how to make desserts</description>
+		<category>Cardigans &amp; Jumpers</category>
+		<name>Woollen Jumper</name>
+		<description>Made from 100% sheeps wool</description>
 		<quantity>3</quantity>
 		<unitPrice>7.50</unitPrice>
 	</product>
 	<product code="101-04">
-		<category>Fiction</category>
-		<name>A Game of Thrones</name>
-		<description>Book One</description>
+		<category>Coats &amp; Jackets</category>
+		<name>Parka Jacket</name>
+		<description>Water-repellent Parka</description>
 		<quantity>1</quantity>
 		<unitPrice>2.25</unitPrice>
 	</product>
 	<product code="101-05">
-		<category>History</category>
-		<name>History of the World</name>
-		<description>A book about the history of the world</description>
+		<category>Coats &amp; Jackets</category>
+		<name>Winter Coat</name>
+		<description>Padded coat with hood</description>
 		<quantity>4</quantity>
 		<unitPrice>3.50</unitPrice>
 	</product>
 	<product code="101-06">
-		<category>Education</category>
-		<name>JavaScript 101</name>
-		<description>Learn how to code in JavaScript</description>
+		<category>Shoes</category>
+		<name>Boots</name>
+		<description>Made from imitation leather with lacing at the front</description>
 		<quantity>1</quantity>
 		<unitPrice>10.50</unitPrice>
 	</product>
 	<product code="101-07">
-		<category>Art</category>
-		<name>101 Paintings</name>
-		<description>A collection of artist's paintings</description>
+		<category>Tops</category>
+		<name>Regular T-Shirt</name>
+		<description>Round-neck T-shirt Regular Fit</description>
 		<quantity>6</quantity>
 		<unitPrice>8.75</unitPrice>
 	</product>
 	<product code="101-08">
-		<category>Education</category>
-		<name>XML 101</name>
-		<description>Learn how to code XML</description>
+		<category>Shoes</category>
+		<name>Trainers</name>
+		<description>White trainers in imitation leather with a padded top edge</description>
 		<quantity>9</quantity>
 		<unitPrice>1.50</unitPrice>
 	</product>
 	<product code="101-09">
-		<category>Education</category>
-		<name>HTML 101</name>
-		<description>Learn how to code HTML</description>
+		<category>Jeans</category>
+		<name>Black Jeans</name>
+		<description>Regular black slim fit jeans</description>
 		<quantity>3</quantity>
 		<unitPrice>6.99</unitPrice>
 	</product>
 	<product code="101-10">
-		<category>Education</category>
-		<name>CSS 101</name>
-		<description>Learn how to code CSS</description>
+		<category>Socks</category>
+		<name>5-pack Socks</name>
+		<description>Soft fine-knit cotton blend socks</description>
 		<quantity>1</quantity>
 		<unitPrice>2.45</unitPrice>
 	</product>

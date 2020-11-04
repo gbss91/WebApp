@@ -32,12 +32,12 @@
 <!-- sets the categories allowed -->
    <xsd:simpleType name="categoryType">
       <xsd:restriction base="xsd:string">
-         <xsd:enumeration value="Fantasy" />
-         <xsd:enumeration value="Cooking" />
-		 <xsd:enumeration value="History" />
-		 <xsd:enumeration value="Education" />
-		 <xsd:enumeration value="Art" />
-		 <xsd:enumeration value="Fiction" />
+         <xsd:enumeration value="Cardigans &amp; Jumpers" />
+         <xsd:enumeration value="Coats &amp; Jackets" />
+		 <xsd:enumeration value="Jeans" />
+		 <xsd:enumeration value="Shoes" />
+		 <xsd:enumeration value="Socks" />
+		 <xsd:enumeration value="Tops" />
       </xsd:restriction>
    </xsd:simpleType>
 
