@@ -18,17 +18,92 @@
 	<xsl:output method="html" doctype-system="about:legacy-compat" encoding="UTF-8" indent="yes"/>
 
 	<xsl:template match="/">
-        <html>
+        <html lang="en">
         <head>
+		
+			<!-- Required meta tags -->
+			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+			
+			<!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
              
             <!-- Google fonts -->
             <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400"/>
-
+	
 			<!-- Link to stylesheet -->
             <link rel="stylesheet" type="text/css" href="products.css"/>
             <link rel="stylesheet" type="text/css" href="style.css"/>
-        </head> 
-        <body>
+			
+			<title>Products</title>
+        </head>
+		
+        <body>	
+		<!-- HEADER START -->
+        <div class="container-fluid background-primary-color header sticky-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Navbar start -->
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <!-- Navbar logo -->
+                            <a class="navbar-brand" href="index.html">
+                                <h2>LOGO</h2>
+                                <!-- <img src="" alt="logo"> --> 
+                            </a>
+                            <!-- Navbar collapse button for responsive version-->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- Navbar menu -->
+                            <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mission.html">Our Mission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="products.xml">Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Search button and page -->
+                            <div class="d-flex">
+                                <a href="search.html">
+                                    <ion-icon name="search"></ion-icon>
+                                </a>
+                            </div>
+                        </nav>
+                        <!-- Navbar end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER END -->
+		
+        <!-- TITLE CONTAINER START -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="main-text">
+                            <h1>Our Products</h1>
+                            <p>Text here</p>
+                        </div>     
+                    </div>
+				</div> 
+			</div>    
+		</div>
+        <!-- TITLE CONTAINER ENDS -->
+		
             <!-- Create a table -->
             <table class="xslTable">
                 <!-- First row with headers-->
@@ -46,16 +121,25 @@
                 <xsl:for-each select="products/product">
                 <tr>
                     <td><img src="img/{@code}.jpg" class="product-img"/></td> <!-- Selects image matchig @code-->
-                    <td><xsl:value-of select="@code"></xsl:value-of></td>
-                    <td><xsl:value-of select="category"></xsl:value-of></td>
-                    <td><xsl:value-of select="name"></xsl:value-of></td>
-                    <td><xsl:value-of select="description"></xsl:value-of></td>
+                    <td class="center"><xsl:value-of select="@code"></xsl:value-of></td>
+                    <td class="center"><xsl:value-of select="category"></xsl:value-of></td>
+                    <td class="center" id="name"><xsl:value-of select="name"></xsl:value-of></td>
+                    <td id="description"><xsl:value-of select="description"></xsl:value-of></td>
                     <td class="center"><xsl:value-of select="quantity"></xsl:value-of></td>
                     <td class="center"><xsl:value-of select="unitPrice"></xsl:value-of></td>
                  </tr>
                  
                  </xsl:for-each>
-            </table>    
+            </table>
+				
+        <!-- Loads icon framework from www.ionicons.com -->
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> 
+        <!-- Bootstrap script and jquery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- SCRIPT END -->
+		
         </body>
         </html>
 	</xsl:template>  
