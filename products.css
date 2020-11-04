@@ -19,7 +19,6 @@ table{
    border-collapse: collapse;
    margin: 0 auto;
    
-
 }
 
 th {
@@ -48,4 +47,18 @@ td {
 
 #description {
 	font-style:italic;
+}
+
+/* horizontal scrollbar for tables if mobile screen */
+@media only screen and (max-width: 991px) {
+
+   .navbar {
+      padding: 10px;
+   }
+
+   .table-mobile {
+       overflow-x: auto;
+       display: block;
+   }
+
 }
