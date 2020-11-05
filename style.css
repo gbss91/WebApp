@@ -57,7 +57,7 @@ ion-icon {
     color: #212121;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
 
     .app-container{
         width: 100%;
@@ -101,17 +101,17 @@ ion-icon {
         display: inline-block;
         top: 0;
     }
+}
 
+.hero-img {
+    background-image: url("img/hero.png");
+    background-size: cover;
+    min-height: 50vh;
 }
 
 .banner-text {
     padding: 100px 0px;
-    min-height: 400px;
-}
-
-#banner-image {
-    padding: 100px 0px;
-
+    min-height: auto;
 }
 
 .box1 {
