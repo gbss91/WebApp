@@ -17,6 +17,18 @@ products.xsl
 
 */
 
+$('document').ready(function(){
+
+    $('#category').click(
+        alert('Hello')
+
+
+    );
+
+
+
+});
+
 
 
 

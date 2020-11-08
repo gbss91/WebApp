@@ -52,10 +52,6 @@ td {
 /* horizontal scrollbar for tables if mobile screen */
 @media only screen and (max-width: 991px) {
 
-   .navbar {
-      padding: 10px;
-   }
-
    .table-mobile {
        overflow-x: auto;
        display: block;
