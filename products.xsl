@@ -111,6 +111,7 @@
                     <th></th>
 					<th>Code</th>
 					<th>Category</th>
+					<th></th>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Quantity</th>
@@ -123,6 +124,39 @@
                     <td><img src="img/{@code}.jpg" class="product-img"/></td> <!-- Selects image matchig @code-->
                     <td class="center"><xsl:value-of select="@code"></xsl:value-of></td>
                     <td class="center"><xsl:value-of select="category"></xsl:value-of></td>
+						<!-- displays image icon based on product category -->	
+						<td>					
+							<xsl:choose>
+								<xsl:when test="category='Tops'">
+									<img src="icon/tshirt.png" alt="Tops"/>
+								</xsl:when>
+							</xsl:choose>
+							<xsl:choose>
+								<xsl:when test="category='Jeans'">
+									<img src="icon/jeans.png" alt="Jeans"/>
+								</xsl:when>
+							</xsl:choose>
+							<xsl:choose>
+								<xsl:when test="category='Cardigans &amp; Jumpers'">
+									<img src="icon/jumper.png" alt="Jumper"/>
+								</xsl:when>
+							</xsl:choose>
+							<xsl:choose>
+								<xsl:when test="category='Coats &amp; Jackets'">
+									<img src="icon/coat.png" alt="Coat"/>
+								</xsl:when>
+							</xsl:choose>
+							<xsl:choose>
+								<xsl:when test="category='Shoes'">
+									<img src="icon/shoes.png" alt="Shoes"/>
+								</xsl:when>
+							</xsl:choose>		
+							<xsl:choose>
+								<xsl:when test="category='Socks'">
+									<img src="icon/socks.png" alt="Socks"/>
+								</xsl:when>
+							</xsl:choose>								
+						</td>
                     <td class="center" id="name"><xsl:value-of select="name"></xsl:value-of></td>
                     <td id="description"><xsl:value-of select="description"></xsl:value-of></td>
                     <td class="center"><xsl:value-of select="quantity"></xsl:value-of></td>
@@ -139,6 +173,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- SCRIPT END -->
+		
+		<!-- Icon image attribution -->
+		Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 		
         </body>
         </html>
