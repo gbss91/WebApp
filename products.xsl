@@ -107,6 +107,7 @@
             <!-- Create a table -->
             <table class="table-mobile">
                 <!-- First row with headers-->
+                <thead>
                 <tr>
                     <th></th>
 					<th>Code</th>
@@ -117,8 +118,10 @@
                     <th>Quantity</th>
                     <th>Unit Price</th>
                 </tr>
+                </thead>
                 
                 <!-- For each loop to select every product element-->
+                <tbody>
                 <xsl:for-each select="products/product">
                 <tr>
                     <td><img src="img/{@code}.jpg" class="product-img"/></td> <!-- Selects image matchig @code-->
@@ -162,13 +165,14 @@
                     <td class="center"><xsl:value-of select="quantity"></xsl:value-of></td>
                     <td class="center"><xsl:value-of select="unitPrice"></xsl:value-of></td>
                  </tr>
-                 
                  </xsl:for-each>
+                </tbody>
             </table>
 				
         <!-- Loads icon framework from www.ionicons.com -->
         <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js" crossorigin="anonymous"></script> 
-        <script type="text/javascript" src="script.js" crossorigin="anonymous"></script> 
+        <script type="module" src="script.js" crossorigin="anonymous"></script> 
+        <script type="module" src="jquery.tablesorter.min.js"></script>
         <!-- Bootstrap script and jquery -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

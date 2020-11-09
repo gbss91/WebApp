@@ -17,17 +17,19 @@ products.xsl
 
 */
 
-$('document').ready(function(){
+/* Reference: https://github.com/tristen/tablesort 
+Use tablesorter puglin to make the table sortable */
 
-    $('#category').click(
-        alert('Hello')
+$(document).ready(function() 
+    { 
+        $(".table-mobile").tablesorter(); 
+    } 
+); 
+
+/* End of Reference: https://github.com/tristen/tablesort 
+Use tablesorter puglin to make the table sortable */
 
 
-    );
-
-
-
-});
 
 
 
