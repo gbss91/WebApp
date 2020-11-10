@@ -110,14 +110,42 @@ ion-icon {
 }
 
 .banner-text {
-    padding: 100px 0px;
+    padding-top: 100px;
+    padding-bottom: 15px;
     min-height: auto;
+}
+
+.btn-primary {
+    color: #212121;
+    background-color: #c8d5b9;
+    border-color: #c8d5b9;
+
+
+}
+
+.btn-primary:hover {
+    color: #212121;
+    background-color: #faf3dd;
+    border-color: #faf3dd;
+
+
+}
+
+.btn.btn-primary:active{
+    color: #757575;
+    background-color: #faf3dd !important; 
+
 }
 
 .box1 {
     padding: 15px;
     margin-top: 20px;
 
+}
+
+#sleigh {
+    display: block;
+    margin: auto;
 }
 
 .box2 {
