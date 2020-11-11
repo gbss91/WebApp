@@ -16,15 +16,21 @@ search.html
 
 */
 
-/* Color pallete */
+/**********************************************
+*** COLOR PALETTE
+**********************************************/
 
 .background-primary-color {background: #68b0ab;}
 .accent-color1 {background: #c8d5b9;}
 .accent-color2 {background: #faf3dd;}
 .primary-text-color {color: #212121;}
 .secondary-text-color {color: #757575}
+.white-text {color: white;}
 
-/* End of color pallete */
+
+/**********************************************
+*** GENERAL - NAVBAR - RESPONSIVE VERSION
+**********************************************/
 
 body {
     font-family: "Poppins", sans-serif;
@@ -55,6 +61,50 @@ ul li {
 ion-icon {
     font-size: 24px; 
     color: #212121;
+}
+
+.icon {
+    height: 40px;
+
+}
+
+.main-text {
+    padding: 100px 0px;
+    min-height: 400px;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    outline:none;
+    background-color:#8fc0a9;
+	border-radius:29px;
+	display:inline-block;
+	cursor:pointer;
+	color:#212121;
+}
+
+.button:hover {
+    background-color:#faf3dd;
+    padding: 10px 15px;
+    border: none;
+    outline:none;
+}
+.button:active {
+    padding: 10px 15px;
+    border: none;
+    outline:none;
+	position:relative;
+	top:1px;
+}
+
+.button a{
+    color: #212121;
+    text-decoration: none;
+}
+
+.reference {
+    float: left;
 }
 
 @media only screen and (max-width: 991px) {
@@ -101,7 +151,20 @@ ion-icon {
         display: inline-block;
         top: 0;
     }
+
+    .box1 {
+        height: 285px;
+    }
+
+    .box2 {
+        height: 285px;
+    }
 }
+
+
+/**********************************************
+*** HOME PAGE
+**********************************************/
 
 .hero-img {
     background-image: url("img/hero.png");
@@ -114,32 +177,16 @@ ion-icon {
     padding-bottom: 15px;
     min-height: auto;
 }
+ 
 
-.btn-primary {
-    color: #212121;
-    background-color: #c8d5b9;
-    border-color: #c8d5b9;
-
-
-}
-
-.btn-primary:hover {
-    color: #212121;
-    background-color: #faf3dd;
-    border-color: #faf3dd;
-
-
-}
-
-.btn.btn-primary:active{
-    color: #757575;
-    background-color: #faf3dd !important; 
-
-}
 
 .box1 {
+    background-image: url(img/calc-img.png);
+    background-size: cover;
+    background-position-y: 40%;
     padding: 15px;
     margin-top: 20px;
+    min-height: 165px;
 
 }
 
@@ -151,11 +198,35 @@ ion-icon {
 .box2 {
     padding: 15px;
     margin-top: 20px;
+    min-height: 165px;
      
 }
 
-.main-text {
-    padding: 100px 0px;
-    min-height: 400px;
+/**********************************************
+*** CALCULATOR
+**********************************************/
+
+#calc1 {
+    display: block;
 }
+
+#calc2 {
+    display: none;
+}
+
+#calc3 {
+    display: none;
+}
+
+.input {
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 70%;
+    padding: 5px;
+
+}
+
+.input:focus { outline: none; }
 

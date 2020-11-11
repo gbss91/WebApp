@@ -131,32 +131,32 @@
 						<td>					
 							<xsl:choose>
 								<xsl:when test="category='Tops'">
-									<img src="icon/tshirt.png" alt="Tops"/>
+									<img src="icon/tshirt.png" alt="Tops" class="icon"/>
 								</xsl:when>
 							</xsl:choose>
 							<xsl:choose>
 								<xsl:when test="category='Jeans'">
-									<img src="icon/jeans.png" alt="Jeans"/>
+									<img src="icon/jeans.png" alt="Jeans" class="icon"/>
 								</xsl:when>
 							</xsl:choose>
 							<xsl:choose>
 								<xsl:when test="category='Cardigans &amp; Jumpers'">
-									<img src="icon/jumper.png" alt="Jumper"/>
+									<img src="icon/jumper.png" alt="Jumper" class="icon"/>
 								</xsl:when>
 							</xsl:choose>
 							<xsl:choose>
 								<xsl:when test="category='Coats &amp; Jackets'">
-									<img src="icon/coat.png" alt="Coat"/>
+									<img src="icon/coat.png" alt="Coat" class="icon"/>
 								</xsl:when>
 							</xsl:choose>
 							<xsl:choose>
 								<xsl:when test="category='Shoes'">
-									<img src="icon/shoes.png" alt="Shoes"/>
+									<img src="icon/shoes.png" alt="Shoes" class="icon"/>
 								</xsl:when>
 							</xsl:choose>		
 							<xsl:choose>
 								<xsl:when test="category='Socks'">
-									<img src="icon/socks.png" alt="Socks"/>
+									<img src="icon/socks.png" alt="Socks" class="icon"/>
 								</xsl:when>
 							</xsl:choose>								
 						</td>
