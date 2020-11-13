@@ -47,9 +47,8 @@
                         <!-- Navbar start -->
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <!-- Navbar logo -->
-                            <a class="navbar-brand" href="index.html">
-                                <h2>LOGO</h2>
-                                <!-- <img src="" alt="logo"> --> 
+                            <a class="navbar-brand d-flex justify-content-center" id="logo" href="index.html">
+                                <img src="img/logo.png" alt="logo"> </img>
                             </a>
                             <!-- Navbar collapse button for responsive version-->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +95,7 @@
                     <div class="col-lg-6 col-sm-6">
                         <div class="main-text">
                             <h1>Our Products</h1>
-                            <p>Text here</p>
+                            <p>All our products are made with organically grown bamboo and cotton.</p>
                         </div>     
                     </div>
 				</div> 
@@ -110,13 +109,13 @@
                 <thead>
                 <tr>
                     <th></th>
-					<th>Code</th>
-					<th id="category">Category</th>
+					<th>Code &#9650;&#9660;</th>
+					<th id="category">Category &#9650;&#9660;</th>
 					<th></th>
-                    <th>Name</th>
+                    <th>Name &#9650;&#9660;</th>
                     <th>Description</th>
-                    <th>Quantity</th>
-                    <th>Unit Price</th>
+                    <th>Quantity &#9650;&#9660;</th>
+                    <th>Unit Price &#9650;&#9660;</th>
                 </tr>
                 </thead>
                 
@@ -128,7 +127,7 @@
                     <td class="center"><xsl:value-of select="@code"></xsl:value-of></td>
                     <td class="center"><xsl:value-of select="category"></xsl:value-of></td>
 						<!-- displays image icon based on product category -->	
-						<td>					
+						<td class="center">					
 							<xsl:choose>
 								<xsl:when test="category='Tops'">
 									<img src="icon/tshirt.png" alt="Tops" class="icon"/>
@@ -167,6 +166,11 @@
                  </tr>
                  </xsl:for-each>
                 </tbody>
+
+                 <!-- Icon image attribution -->
+                <footer class="page-footer reference">
+		            Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                 </footer>
             </table>
 				
         <!-- Loads icon framework from www.ionicons.com -->
@@ -179,9 +183,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- SCRIPT END -->
 		
-		<!-- Icon image attribution -->
-		Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-		
+       
         </body>
         </html>
 	</xsl:template>  
