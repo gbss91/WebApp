@@ -95,7 +95,7 @@
                     <div class="col-lg-6 col-sm-6">
                         <div class="main-text">
                             <h1>Our Products</h1>
-                            <p>All our products are made with organically grown bamboo and cotton.</p>
+                            <p>All our products are made with organic and ethically sourced bamboo, cotton and wool.</p>
                         </div>     
                     </div>
 				</div> 
