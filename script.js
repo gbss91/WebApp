@@ -38,7 +38,7 @@ Use tablesorter puglin to make the table sortable
 *** HOME PAGE CALCULATOR 
 **********************************************/
 
-//Defines the functon of start button 
+//Defines the function for the start button 
 $('#start-button').click(function(){
     //Hide the HTML block with the first screen and then shows the second screen 
     $('#calc1').hide();
