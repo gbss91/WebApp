@@ -95,7 +95,7 @@
                     <div class="col-lg-6 col-12">
                         <div class="main-text">
                             <h1>Our Products</h1>
-                            <p>All our products are made with organic and ethically sourced bamboo, cotton and wool.</p>
+                            <p>All our products are made with ethically sourced and recycled materials. From organic cotton to lyocell</p>
                         </div>     
                     </div>
 				</div> 
@@ -166,12 +166,20 @@
                  </tr>
                  </xsl:for-each>
                 </tbody>
-
-                 <!-- Icon image attribution -->
-                <footer class="page-footer reference">
-		            Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-                 </footer>
             </table>
+            
+            <!-- Icon image attribution -->
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-xs-8">
+                            <footer class="page-footer reference">
+                                <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Icons made by Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                            </footer>  
+                        </div>
+                    </div>   
+                </div>
+            </div>
 				
         <!-- Loads icon framework from www.ionicons.com -->
         <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js" crossorigin="anonymous"></script> 
