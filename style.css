@@ -17,7 +17,7 @@ search.html
 */
 
 /**********************************************
-*** COLOR PALETTE
+*** COLOR PALETTE - Used as reference or class 
 **********************************************/
 
 .background-primary-color {background: #68b0ab;}
@@ -120,65 +120,6 @@ ion-icon {
     color: #212121;
 }
 
-@media only screen and (max-width: 991px) {
-
-    .app-container{
-        width: 100%;
-        height: 100vh;
-    }
-
-    .header {
-        padding: 15px 0px;
-
-    }
-
-    #logo {
-        height: 40px;
-        margin: 0 auto;
-    }
-
-    .navbar-light .navbar-toggler {
-        border-color: transparent;
-        position: absolute;
-        padding: 0px;
-    }
-
-    .main-menu-item .nav-item {
-        padding: 10px 15px ;
-    }
-
-    .nav-item:hover {
-        background: #faf3dd;
-    }
-
-    .navbar-collapse {
-        z-index: 9999 !important;
-        position: absolute;
-        left: 0;
-        top: 55px;
-        width: 100%;
-        background-color: #8fc0a9;
-    }
-
-    .navbar-brand h2 {
-        max-width: 100px;
-        margin: 0 auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        display: inline-block;
-        top: 0;
-    }
-
-    .box1 {
-        height: 285px;
-    }
-
-    .box2 {
-        height: 285px;
-    }
-}
-
 
 /**********************************************
 *** HOME PAGE
@@ -253,3 +194,86 @@ ion-icon {
 *** ABOUT PAGE
 **********************************************/
 
+#slogan {
+    color: #212121;
+    font-family: "Play", sans-serif;
+    font-size: 120px;
+
+}
+
+/**********************************************
+*** MEDIA QUERY FOR RESPONSIVE DESIGN 
+**********************************************/
+
+
+@media only screen and (max-width: 991px) {
+
+    .app-container{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header {
+        padding: 15px 0px;
+
+    }
+
+    #logo {
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+        position: absolute;
+        padding: 0px;
+    }
+
+    .main-menu-item .nav-item {
+        padding: 10px 15px ;
+    }
+
+    .nav-item:hover {
+        background: #faf3dd;
+    }
+
+    .navbar-collapse {
+        z-index: 9999 !important;
+        position: absolute;
+        left: 0;
+        top: 55px;
+        width: 100%;
+        background-color: #8fc0a9;
+    }
+
+    .navbar-brand h2 {
+        max-width: 100px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        top: 0;
+    }
+
+    .box1 {
+        height: 285px;
+    }
+
+    .box2 {
+        height: 285px;
+    }
+
+    #slogan {
+        font-size: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    #slogan {
+        font-size: 60px;
+    }
+
+}

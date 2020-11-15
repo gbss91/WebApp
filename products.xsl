@@ -92,7 +92,7 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-12">
                         <div class="main-text">
                             <h1>Our Products</h1>
                             <p>All our products are made with organic and ethically sourced bamboo, cotton and wool.</p>
