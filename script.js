@@ -18,7 +18,7 @@ products.xsl
 */
 
 /**********************************************
-*** REFERENCE: https://github.com/tristen/tablesort 
+*** @REFERENCE: https://github.com/tristen/tablesort 
 Use tablesorter puglin to make the table sortable
 **********************************************/
 
@@ -29,7 +29,7 @@ $(document).ready(function()
 ); 
 
 /**********************************************
-*** END OF REFERENCE: https://github.com/tristen/tablesort 
+*** END OF @REFERENCE: https://github.com/tristen/tablesort 
 Use tablesorter puglin to make the table sortable
 **********************************************/
 
@@ -75,6 +75,8 @@ $('#reset-button').click(function(){
 
 });
 
-
+/**********************************************
+*** SEARCH PAGE
+**********************************************/
 
 
