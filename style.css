@@ -274,6 +274,15 @@ textarea {
 
 }
 
+.result-container {
+    margin-top: 50px;
+}
+
+#product-img {
+    height: 200px;
+    margin-bottom: 25px;
+}
+
 /**********************************************
 *** MEDIA QUERY FOR RESPONSIVE DESIGN 
 **********************************************/
