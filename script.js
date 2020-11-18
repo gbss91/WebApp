@@ -79,4 +79,119 @@ $('#reset-button').click(function(){
 *** SEARCH PAGE
 **********************************************/
 
+//Resets input value in search box when page loads
+$(document).ready(function() {
+    $('#search-box').val(null);
+})
+
+//Store XML file in variable 
+var xmlFile = 'products.xml';
+
+//Calls the search function when clicking the button 
+$('#search-btn').click(search);  
+
+//Search function. This is called when clicking search button 
+function search() {
+    var input = $('#search-box').val();
+
+    //Alert if there is no input
+    if (input == null || input == ""){
+        alert('Please enter name or code.'); 
+        return; //This exit from method instead of continuing with the rest 
+    }
+
+    //Calls function to get XMLDoc
+    getXMLDocObject(xmlFile, function(xmlDoc) {
+
+        //Extract info from xmlDoc object 
+        var products = xmlDoc.getElementsByTagName('products')[0];
+        var product = products.getElementsByTagName('product');
+        var found = false;
+
+        //Traverse products searching for code 
+        for(var i = 0; i < product.length; i++) {
+            var code = product[i].attributes[0].value;
+
+            if(input === code) { 
+
+                $('#product-img').attr('src', 'img/' + code + ".jpg"); //Add image src to img tag in HTML
+                $('#code').html(code); //Adds code to the <p> tag in the HMLT to print it on screen
+
+                var name = product[i].children[1].innerHTML; //Gets name value using the XML DOM 
+                $('#name').html(name); //Adds name to the <h4> tag in the HMLT to print it on screen 
+
+                var category = product[i].children[0].innerHTML; //Gets category value using the XML DOM 
+                $('#category').html(category); //Adds product to the <p> tag in the HMLT to print it on screen
+
+                var description = product[i].children[2].innerHTML; //Gets description value using the XML DOM 
+                $('#description').html(description); //Adds description to the <p> tag in the HMLT to print it on screen
+
+                var quantity = product[i].children[3].innerHTML; //Gets quantity value using the XML DOM 
+                $('#quantity').html('Quantity: ' + quantity); //Adds quantity to the <p> tag in the HMLT to print it on screen
+
+                var price = product[i].children[4].innerHTML; //Gets price value using the XML DOM 
+                $('#price').html('Unit price: ' + price); //Adds price to the <p> tag in the HMLT to print it on screen
+
+                found = true; //This will be used for the alert 
+            }
+        }
+
+        //Traverse products searching for name
+        for(var i = 0; i < product.length; i++) {
+            var name = product[i].children[1].innerHTML;
+            var code = product[i].attributes[0].value;
+
+            if(name.toLowerCase() === input.toLowerCase()) { 
+
+                $('#product-img').attr('src', 'img/' + code + ".jpg"); //Add image src to img tag in HTML
+                $('#code').html(code); //Adds code to the <p> tag in the HMLT to print it on screen
+
+                $('#name').html(name); //Adds name to the <h4> tag in the HMLT to print it on screen 
+
+                var category = product[i].children[0].innerHTML; //Gets category value using the XML DOM 
+                $('#category').html(category); //Adds product to the <p> tag in the HMLT to print it on screen
+
+                var description = product[i].children[2].innerHTML; //Gets description value using the XML DOM 
+                $('#description').html(description); //Adds description to the <p> tag in the HMLT to print it on screen
+
+                var quantity = product[i].children[3].innerHTML; //Gets quantity value using the XML DOM 
+                $('#quantity').html('Quantity: ' + quantity); //Adds quantity to the <p> tag in the HMLT to print it on screen
+
+                var price = product[i].children[4].innerHTML; //Gets price value using the XML DOM 
+                $('#price').html('Unit price: ' + price); //Adds price to the <p> tag in the HMLT to print it on screen
+
+                found = true; //This will be used for the alert 
+            }
+
+        }
+
+        if(!found) {
+            alert('No product found!'); //Alerts user when no product is found 
+        }
+
+    });
+    
+}
+
+
+//Function to get file document with AJAX XMLHttpRequest 
+function getXMLDocObject(xmlFile, callback) { 
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if( (this.readyState === 4) && (this.status === 200) ) { //The request is finished and the status is OK
+            var xmlContent = this.responseText;
+            var xmlDoc = parseXML(xmlContent);
+            callback(xmlDoc); //Callback to pass function as argument later 
+        }
+    };
+    request.open('GET', xmlFile, true);
+    request.send();
+}
+
+//Parse the XML into an XML DOM object
+function parseXML(xmlContent) {
+    var parser = new DOMParser();
+    var xmlDoc = parser.parseFromString(xmlContent, 'text/xml');
+    return xmlDoc
+}
 
