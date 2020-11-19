@@ -21,7 +21,7 @@
 		<category>Tops</category>
 		<name>Logo T-Shirt</name>
 		<description>Simple organic cotton T-Shirt with Logo Design</description>
-		<quantity>1</quantity>
+		<quantity>5</quantity>
 		<unitPrice>10.50</unitPrice>
 	</product>
 	<product code="101-02">
@@ -29,34 +29,34 @@
 		<name>Regular Jeans</name>
 		<description>Straight leg blue washed, stretched denim jeans made from recycled fabrics</description>
 		<quantity>2</quantity>
-		<unitPrice>40.00</unitPrice>
+		<unitPrice>20.00</unitPrice>
 	</product>
 	<product code="101-03">
 		<category>Cardigans &amp; Jumpers</category>
 		<name>Woollen Jumper</name>
 		<description>Made from 100% ethical wool</description>
 		<quantity>3</quantity>
-		<unitPrice>35.00</unitPrice>
+		<unitPrice>25.00</unitPrice>
 	</product>
 	<product code="101-04">
 		<category>Coats &amp; Jackets</category>
 		<name>Parka Jacket</name>
 		<description>Water-repellent Parka</description>
-		<quantity>1</quantity>
-		<unitPrice>75.00</unitPrice>
+		<quantity>3</quantity>
+		<unitPrice>45.00</unitPrice>
 	</product>
 	<product code="101-05">
 		<category>Coats &amp; Jackets</category>
 		<name>Winter Coat</name>
 		<description>Padded coat with hood</description>
-		<quantity>4</quantity>
-		<unitPrice>85.00</unitPrice>
+		<quantity>2</quantity>
+		<unitPrice>54.00</unitPrice>
 	</product>
 	<product code="101-06">
 		<category>Shoes</category>
 		<name>Boots</name>
 		<description>Made from imitation leather with lacing at the front</description>
-		<quantity>1</quantity>
+		<quantity>4</quantity>
 		<unitPrice>25.00</unitPrice>
 	</product>
 	<product code="101-07">
@@ -64,27 +64,27 @@
 		<name>Regular T-Shirt</name>
 		<description>Round-neck T-shirt Regular Fit</description>
 		<quantity>6</quantity>
-		<unitPrice>8.75</unitPrice>
+		<unitPrice>5.75</unitPrice>
 	</product>
 	<product code="101-08">
 		<category>Shoes</category>
 		<name>Trainers</name>
 		<description>White trainers in vegan leather and chrome free</description>
-		<quantity>8</quantity>
-		<unitPrice>50.00</unitPrice>
+		<quantity>5</quantity>
+		<unitPrice>20.50</unitPrice>
 	</product>
 	<product code="101-09">
 		<category>Jeans</category>
 		<name>Black Jeans</name>
 		<description>Regular black slim fit jeans</description>
 		<quantity>3</quantity>
-		<unitPrice>37.00</unitPrice>
+		<unitPrice>23.00</unitPrice>
 	</product>
 	<product code="101-10">
 		<category>Socks</category>
 		<name>3-pack Socks</name>
 		<description>Soft fine-knit cotton blend socks</description>
 		<quantity>10</quantity>
-		<unitPrice>7.50</unitPrice>
+		<unitPrice>4.50</unitPrice>
 	</product>
 </products>
